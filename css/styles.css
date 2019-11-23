@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body{
+    font-family: 'Gill Sans', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#home-body{
+    background-image: url("../assets/images/eyern.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.nav{
+    display: block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0px;
+    list-style: none;
+    position: fixed;
+    top: 80%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.6);
+}
+.padding-0{
+    padding: 0;
+    margin: 0;
+}
+.tabs {
+    height: 20vh;
+    width: 20vw;
+    color: #ffffff;
+    text-align: center;
+}
+.tab-pane{
+    padding-bottom: 20vh;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    min-height: 100vh;
+}
+iframe{
+    height: 100vh;
+    width: 100%;
+}
+#home h1{
+    font-size: 60px;
+}
+
+#home p{
+    font-size: 25px;
+}
+
+.item-title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #00C0B0;
+}
+#home{
+    background-color: rgba(0,0,0,0.2);
+    color: #ffffff;
+    padding-top: 15vh;
+    max-height: 100vh;
+}
+#home .fa{
+    padding: 5px;
+}
+#profile, #skills, #contact, #projects, #blog{
+    background-color: #ffffff;
+    color: #555555;
+}
+
+#skills ul{
+    column-count: 2;
+    font-size: 24px;
+}
+
+.btn{
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 1px 3px 10px #d3d3d3;
+    margin: 10px;
+    background-color: #00C0B0;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #009a8d;
+    box-shadow: 1px 3px 10px #a9a9a9;
+}
+
+form .btn{
+    display: block;
+}
+
+.nav-titles{
+    display: none;
+}
+@media (min-width: 768px) {
+    .tabs{
+        width: 100%;
+    }
+    .nav{
+        top: 0%;
+        width: 15%;
+    }
+    .nav-titles{
+        display: block;
+    }
+    .tab-content{
+        width: 85%;
+        left: 15%;
+        position: relative;
+    }
+    .tab-pane{
+        padding-bottom: 10px;
+    }
+}
+
+a{
+    color: #00C0B0;
+    text-decoration: none;
+}
+a:hover{
+    color: #009a8d;
+    text-decoration: none;
+}
+.nav-icons{
+    height: 60px;
+    width: 60px;
+
+}
+
+.screenshot {
+    float: right;
+}
+.form-field{
+    padding:10px;
+    font-family: 'FontAwesome', 'Gill Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    width: 90%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px #777777;
+    margin: 10px;
+}
+.form-field:focus{
+    outline: none;
+    border-bottom: solid 2px #00C0B0;
+}
+.form-field:focus::placeholder{
+    color: #00C0B0;
+}
+.tabs .fa{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+#home .fa{
+    font-size: 40px;
+}
+
+#notfound {
+    position: relative;
+    height: 100vh;
+}
+
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.notfound {
+    max-width: 520px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.notfound .notfound-404 {
+    position: relative;
+    height: 200px;
+    margin: 0px auto 20px;
+    z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 236px;
+    font-weight: 200;
+    margin: 0px;
+    color: #211b19;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.notfound .notfound-404 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #211b19;
+    background: #fff;
+    padding: 10px 5px;
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+
+.notfound a {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 23px;
+    font-size: 18px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h1 {
+        font-size: 148px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .notfound .notfound-404 {
+        height: 148px;
+        margin: 0px auto 10px;
+    }
+    .notfound .notfound-404 h1 {
+        font-size: 86px;
+    }
+    .notfound .notfound-404 h2 {
+        font-size: 16px;
+    }
+    .notfound a {
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+}
